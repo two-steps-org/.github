@@ -228,17 +228,15 @@ nano ~/.ssh/config
 Paste:
 
 ```ssh
-# Personal GitHub over 443
+# Personal GitHub
 Host github-personal
-  HostName ssh.github.com
-  Port 443
+  HostName github.com
   User git
   IdentityFile ~/.ssh/personal
 
-# Work GitHub over 443
+# Work GitHub
 Host github-work
-  HostName ssh.github.com
-  Port 443
+  HostName github.com
   User git
   IdentityFile ~/.ssh/work
 ```
