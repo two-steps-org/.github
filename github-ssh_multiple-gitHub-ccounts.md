@@ -55,14 +55,19 @@ Create `~/.gitconfig`:
 
 [core]
   autocrlf = input
+  sshCommand = ssh -i ~/.ssh/work
+  # or use personal depend on you what you want to use by default
 
 [user]
   name = Your Name
-  email = your-personal@email.com
+  email = your-work@twosteps.ai
+  # or personal
 
+# you can choose another folder directory depends on you.
 [includeIf "gitdir:~/projects/work/"]
   path = ~/.gitconfig-work
 
+# same here 
 [includeIf "gitdir:~/projects/personal/"]
   path = ~/.gitconfig-personal
 ```
